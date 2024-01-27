@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOKKI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+  <section class="calculator">
+    <div class="container">
+        <h1 id="title" style="text-align: center;">LOKKI CALCULATOR</h1>
+        <p id="description" style=" color: #eee; text-align: center;">Online calculator for 
+          add, sub, mul and div <br>designed by LOKKI</p>
+        
+      <input type="text" class="display" placeholder=" 0" id="result"/>
+      <div class="buttons">
+        <button class="operator"  id="clear" onclick="clearScreen()">C</button>
+        <button class="operator" id="d" onclick="del()"><-</button>
+        <button id="dot"  onclick="display('.')">.</button>
+        <button class="operator"  id="multiple" onclick="display('*')">x</button>
+    
+
+        <button  onclick="display('7')" id="7">7</button>
+        <button  onclick="display('8')" id="8">8</button>
+        <button  onclick="display('9')" id="9">9</button>
+        <button class="operator"   id="division" onclick="display('/')">/</button>
+
+        <button  onclick="display('4')" id="4">4</button>
+        <button  onclick="display('5')" id="5">5</button>
+        <button  onclick="display('6')" id="6">6</button>
+        <button  class="operator"  id="subtract" onclick="display('-')">-</button>
+
+        <button  onclick="display('1')" id="1">1</button>
+        <button  onclick="display('2')" id="2">2</button>
+        <button  onclick="display('3')" id="3">3</button>
+        <button class="operator"  id="add" onclick="display('+')">+</button>
+      </div>
+      
+      <div class="last">
+        <button  id="zero" onclick="display('0')">0</button>
+        <button  id="doublezero" onclick="display('00')">00</button>
+        <button class="submit"  id="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </section>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
